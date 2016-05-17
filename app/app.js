@@ -15,8 +15,8 @@ var myApp = angular.module('myApp', [
         controller: 'mainController'
       })
       .when('/contactInfo/:index', {
-      templateUrl: 'app/views/contactInfo.html',
-      controller: 'contactInfoController'
+        templateUrl: 'app/views/contact.html',
+        controller: 'contactInfoController'
       })
       .when('/add', {
         templateUrl: 'app/views/addContact.html',
@@ -27,4 +27,4 @@ var myApp = angular.module('myApp', [
         controller: 'editContactController'
       })
       .otherwise({redirectTo: '/home'});
-  })
+  });

@@ -1,5 +1,5 @@
 angular.module('myApp.editContact', [])
-  .controller('editContactController', function ($scope, $routeParams){
-  this.index = $routeParams.index;
-  this.currContact = this.contacts[this.index];
-})
+  .controller('editContactController', function ($scope, $routeParams) {
+  $scope.index = $routeParams.index;
+  $scope.currContact = $scope.contacts[$scope.index];
+});
