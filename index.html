@@ -23,11 +23,11 @@
               <div class="tab-pane active" id="test">
                  <ul class="list-group">
                    <li>
-                     <contact class="list-group-item contact" ng-repeat="contact in contacts | orderBy: 'name' | filter: searchText">
+                     <div class="list-group-item contact" ng-repeat="contact in contacts | orderBy: 'name' | filter: searchText">
                       <a ng-href="#/contactInfo/{{contacts.indexOf(contact)}}">
                         {{contact.name}}
                       </a>
-                     </contact>
+                     </div>
                    </li>
                  </ul>
               </div>
@@ -45,6 +45,11 @@
   <!-- scripts -->
   <script src="node_modules/angular/angular.js"></script>
   <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="app/controller/addContact.js"></script>
+  <script src="app/controller/contactInfo.js"></script>
+  <script src="app/controller/editContact.js"></script>
+  <script src="app/controller/main.js"></script>
+  <script src="app/services/services.js"></script>
   <script src="app/app.js"></script>
 </body>
 </html>

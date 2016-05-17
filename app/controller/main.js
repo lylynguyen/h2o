@@ -7,4 +7,4 @@ angular.module('myApp.main', [])
       this.contacts.splice(index, 1);
       this.removed = "Contact removed!"
     };
-  }
+  })
