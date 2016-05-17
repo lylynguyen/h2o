@@ -1,0 +1,33 @@
+<div class=".col-xs-12 col-md-12 list-group-item">
+  <h3 class="text-center">{{curr.name}}</h3>
+  <p>email: <a ng-href="{{curr.email}}">{{curr.email}}</a></p>
+  <p>phone: {{curr.mobile}}</p>
+  <p>url: <a ng-href="{{curr.url}}"> {{curr.url}}</a></p>
+  <p>Notes:</p>
+  <p>{{curr.notes}}</p>
+  <div>
+    <a href="#/">
+      <button class="btn btn-default" ng-click="remove(curr)">
+        <span class="glyphicon glyphicon-remove"></span>
+      </button>
+    </a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="add-left">
+    <a href = "#/add">
+      <button class="btn btn-default">
+      <span class="glyphicon glyphicon-plus"></span>
+      </button>
+    </a>
+  </div>
+  <div class="add-right">
+    <a ng-href="#/edit/{{contacts.indexOf(curr)}}">
+      <button class="btn btn-default">
+        <span>Edit</span>
+      </button>
+    </a>
+  </div>
+</div>
+

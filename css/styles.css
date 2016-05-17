@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  align-content: center;
+
+}
+
+.panel {
+  margin: 15px 0 0 15px;
+}
+.contacts {
+  width: 800px;
+  height: 400px;
+
+  align-content: center;
+  float: none;
+  margin: 100px auto 100px auto;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2),
+        0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.form-control {
+  margin: 20px 0 0 10px;
+  text-align: center;
+}
+.contact {
+  text-align: left;
+  text-indent: 5px;
+  width: 100%;
+}
+
+.contact-list {
+  float:left;
+  overflow-y: scroll;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.contact-view {
+  border: none;
+  width: 100%;
+
+  float: right;
+  margin: 20px 0 0 20px;
+  padding: 0;
+  background-color: #FFFFFD;
+}
+
+.tab-pane{
+  height:300px;
+  overflow-y:scroll;
+}
+
+.add-button {
+  margin-top: 10px;
+  float: left;
+  background-color: #E8E8E8;
+}
+
+.add-main {
+  width: 100%
+}
+
+.add-left {
+  margin: 20px 0 0 20px;
+  float: left;
+}
+
+.add-right {
+  margin: 20px;
+  float: right;
+}
+
+
+
+

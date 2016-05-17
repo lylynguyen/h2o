@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+
+
+  <title>Contact List</title>
+  <style>[ng-cloak] { display: none; }</style>
+
+</head>
+<body ng-app="myApp">
+  <div class="container main">
+    <div class="contacts>
+      <div class="row">
+        <div class="col-xs-5 col-md-5 contact-list">
+        <input class="form-control" type="text" placeholder="search" ng-model="searchText">
+          <div class="panel">
+            <div class="tab-content">
+              <div class="tab-pane active" id="test">
+                 <ul class="list-group">
+                   <li>
+                     <contact class="list-group-item contact" ng-repeat="contact in contacts | orderBy: 'name' | filter: searchText">
+                      <a ng-href="#/contactInfo/{{contacts.indexOf(contact)}}">
+                        {{contact.name}}
+                      </a>
+                     </contact>
+                   </li>
+                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=".col-xs-6 col-md-6 contact-view">
+        <div class="row">
+           <div ng-view></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- scripts -->
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="app/app.js"></script>
+</body>
+</html>
