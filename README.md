@@ -2,4 +2,4 @@
 
 * npm install 
 
-* type the following command in your termina python -m SimpleHTTPServer 8000
+* type the following command in your terminal python -m SimpleHTTPServer 8000
